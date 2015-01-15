@@ -54,6 +54,7 @@ html {
 
 .center-buttons {
   text-align: center;
+  margin-bottom: 1.5em;
 }
 
 .forwards {
@@ -62,10 +63,13 @@ html {
   line-height: 7em;
   border-radius: 50%;
   background-color:green; 
+  margin-right: 1em;
+
 }
 .forwards, a {
   color: white;
   text-decoration:none;
+
 }
 
 .backwards {
@@ -73,15 +77,18 @@ html {
   display: inline-block;
   line-height: 7em;
   border-radius: 50%;
-  background-color:red; 
+  background-color:red;   
+  margin-left: 1em;
 }
 
 .forwards:hover {
-  background-color: white
+  background-color: white;
+  transition: all 1s ease-in-out;
 }
 
 .backwards:hover {
-  background-color: white
+  background-color: white;
+  transition: all 1s ease-in-out;
 }
 
 a:hover {
