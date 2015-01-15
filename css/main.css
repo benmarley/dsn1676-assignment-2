@@ -36,6 +36,13 @@ html {
   position: absolute;
   bottom: calc(50%);
   left: calc(50% - 7px);
+  transition: all 6000ms linear;
+  transform-origin: bottom center;
+}
+
+.hand-minute {
+  transform: rotate;
+  transition: all 6000ms linear;
 }
 
 .center {
@@ -43,13 +50,48 @@ html {
   position: absolute;
   bottom: calc(50% - 14px);
   left: calc(50% - 14px);
+}
 
+.center-buttons {
+  text-align: center;
 }
 
 .forwards {
-
+  width: 7em;
+  display: inline-block;
+  line-height: 7em;
+  border-radius: 50%;
+  background-color:green; 
 }
-.backwards{
+.forwards, a {
+  color: white;
+  text-decoration:none;
+}
 
-  
+.backwards {
+  width: 7em;
+  display: inline-block;
+  line-height: 7em;
+  border-radius: 50%;
+  background-color:red; 
+}
+
+.forwards:hover {
+  background-color: white
+}
+
+.backwards:hover {
+  background-color: white
+}
+
+a:hover {
+  color: black
+}
+
+.clock-face:target .hand-hour {
+  transform: rotate(360deg);
+}
+
+.clock-face:target .hand-minute { 
+  transform: rotate(4320deg);
 }
